@@ -39,7 +39,7 @@ You can get your client id from the [same page](https://discordapp.com/developer
 
 With this id you can create an invite link for your bot.
 
-If you are the owner or admin of the server, you can use this link to add your bot to your server. Otherwise you have to give the link to the server owner/admin and ask him to add your bot.
+If you are the owner or admin of the server, you can use this link to add your bot to your server. Otherwise, you have to give the link to the server owner/admins and ask them to add your bot.
 
 ### Create the invite link yourself
 
@@ -57,7 +57,7 @@ System.out.println(api.createBotInvite());
 
 ### Use a website to build the invite
 
-You can also use an invite builder like [this](https://finitereality.github.io/permissions-calculator/) one.
+You can also use an invite builder, like [this](https://finitereality.github.io/permissions-calculator/) one.
 
 ### Use the invite link
 

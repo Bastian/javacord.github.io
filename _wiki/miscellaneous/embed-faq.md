@@ -46,7 +46,7 @@ Javacord allows you to use several image sources. By default embeds expect a lin
 .setAuthor("Author Name", "http://google.com/", "https://cdn.discordapp.com/embed/avatars/0.png")
 ```
 * First parameter: The name of the author
-* Second parameter: A link for the author (e.g. his homepage). Can be `null`.
+* Second parameter: A link for the author (e.g. their homepage). Can be `null`.
 * Third parameter: The avatar of the author
 > ![](https://i.imgur.com/SyE0e88.png)
 

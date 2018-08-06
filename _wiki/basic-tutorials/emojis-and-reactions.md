@@ -46,12 +46,12 @@ message.addReaction(":smiley:"); // doesn't work
 
 ### What are custom emojis?
 
-Custom emojis are emojis which are created in a server. You can get all custom emojis the bot knows by using `DiscordApi#getCustomEmojis()`.
+Custom emojis are emojis that are created in a server. You can get all custom emojis the bot knows by using `DiscordApi#getCustomEmojis()`.
 ![](https://i.imgur.com/5tb3Kxu.png)
 
 ### How to use them in messages
 
-To use custom emojis, you have to know its "tag" which has the following format: `<:name:id>`. You can get it by calling `CustomEmoji#getMentionTag()`:
+To use custom emojis, you have to know its "tag", which has the format `<:name:id>`. You can get it by calling `CustomEmoji#getMentionTag()`:
 ```java
 channel.sendMessage("Hi! <:javacord:415465982715494402>");
 ```

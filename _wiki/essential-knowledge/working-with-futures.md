@@ -11,7 +11,7 @@ keywords:
 
 > This tutorials assumes, you are familiar with lambda expressions. Take a look at the [Lambda Introduction](/wiki/essential-knowledge/lambda-introduction) first, if you are not!
 
-As Javacord is heavily multithreaded, you have to understand the concept of [Futures](https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Future.html) in general, as well as their most common implementation, the [CompletableFuture](https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html). This little introduction should give you a quick overview about the basics you need to know in order to work with Futures.
+As Javacord is heavily multithreaded, you have to understand the concept of [Futures](https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Future.html) in general, as well as their most common implementation, the [CompletableFuture](https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html). This little introduction should give you a quick overview of the basics you need to know in order to work with Futures.
 
 ## So, what the heck is a future?
 A future is basically a wrapper, which will contain a value in the future, but might not contain it right now. This is useful, if a method call requires some time and should not block the execution of your current code. You can easily see the difference with a primitive speed comparison:
@@ -41,7 +41,7 @@ System.out.println((System.currentTimeMillis() - currentTime) + " ms");
 
 ## join()
 
-This method blocks the current thread, until the method finished and returns its result or throwing a `CompletionException` if anything failed. You usually should avoid `join()` for larger bots or methods which will be called frequently.
+This method blocks the current thread until the method finishes and returns its result or throws a `CompletionException` if anything failed. You usually should avoid `join()` for larger bots or methods which will be called frequently.
 
 **Example**
 
@@ -58,7 +58,7 @@ Message message = channel.sendMessage("First!").join();
 // join() ensures, that an exception is thrown in case something went wrong
 message.addReaction("👍").join();
 ```
-`join()` can basically be used every time if you don't care that much about your application's performance. So if you're only developing a small bot for your own server and your current goal is to just get it working, it is probably easier to always use `join()` to get the result of a method. You'll usually not run into problems if you don't overuse this method.
+`join()` can basically be used every time if you don't care that much about your application's performance. So if you're only developing a small bot for your own server and your current goal is to just get it working, it is probably easier to always use `join()` to get the result of a method. You won't usually run into problems if you don't overuse this method.
 
 ## thenAcceptAsync(...)
 
@@ -66,7 +66,7 @@ This method accepts a `Consumer`, which consumes the result of the method and is
 
 **Example**
 
-The following example would create a new text channel in the given `server` and sends a message directly afterwards.
+The following example would create a new text channel in the given `server` and send a message directly afterwards.
 ```java
 server.createTextChannelBuilder()
     .setName("new-channel")
@@ -77,7 +77,7 @@ server.createTextChannelBuilder()
         message.addReaction("👍").join();
     });
 ```
-This method has one downside however: It will not throw or log any exception which might happen while executing the code. If your bot doesn't have the permissions to create a new channel, for example, it will just fail silently. If you don't want this, you can additionally use the `exceptionally(...)` method.
+This method has one downside however: it will not throw or log any exception which might happen while executing the code. If your bot doesn't have the permissions to create a new channel, for example, it will just fail silently. If you don't want this, you can additionally use the `exceptionally(...)` method.
 
 ## exceptionally(...)
 
@@ -85,7 +85,7 @@ This method accepts a `Function` as parameter, which consumes possible exception
 
 **Example**
 
-The following example would create a new text channel in the given `server` and sends a message directly afterwards. If something fails (e.g. if the bot isn't allowed to create a text channel in the server), it will log an exception.
+The following example would create a new text channel in the given `server` and send a message directly afterwards. If something fails (e.g. if the bot isn't allowed to create a text channel in the server), it will log an exception.
 ```java
 server.createTextChannelBuilder()
     .setName("new-channel")
@@ -111,7 +111,7 @@ server.createTextChannelBuilder()
         message.addReaction("👍").join();
     }).exceptionally(ExceptionLogger.get());
 ```
-The exception logger even allows you to ignore special kinds of exceptions. If you for example don't want to log errors for missing permissions, but still log errors cause by other problems (e.g. an invalid channel name like an empty string `""`) you can tell the exception logger to not log these kind of exceptions:
+The exception logger even allows you to ignore special kinds of exceptions. If you, for example, don't want to log errors for missing permissions, but still log errors cause by other problems (e.g. an invalid channel name like an empty string `""`) you can tell the exception logger to not log these exceptions:
 ```java
 server.createTextChannelBuilder()
     .setName("new-channel")

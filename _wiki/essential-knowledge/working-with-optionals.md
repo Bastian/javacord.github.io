@@ -9,9 +9,9 @@ keywords:
 - thenAcceptAsync
 ---
 
-> This tutorials assumes, you are familiar with lambda expressions. Take a look at the [Lambda Introduction](/wiki/essential-knowledge/lambda-introduction) first, if you are not!
+> This tutorials assumes you are familiar with lambda expressions. Take a look at the [Lambda Introduction](/wiki/essential-knowledge/lambda-introduction) first, if you are not!
 
-The Optional class is widely used in Javacord. Basically every method which might return a `null` value will return an Optional in Javacord instead. Optionals will help you to avoid NullPointerExceptions and make very clear if a method may not have a result. Here's a small example:
+The Optional class is widely used in Javacord. Basically, every method which might return a `null` value will return an Optional in Javacord instead. Optionals will help you to avoid NullPointerExceptions and make very clear if a method may not have a result. Here's a small example:
 
 **The old way of doing it**
 ```java
@@ -28,7 +28,7 @@ api.getCachedUserById(123L).ifPresent(user -> user.sendMessage("Hi!"));
 # Methods
 The Optional class has a ton of useful methods which can all be found in the [JavaDocs](https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html). Here's a small explanation of the most important ones:
 ## get()
-This method just returns the value of the Optional. You should only use this method, if you are sure that the Optional contains a value, because it throws a `NoSuchElementException` if it does not contain a value.
+This method just returns the value of the Optional. You should only use this method if you are sure that the Optional contains a value, because it throws a `NoSuchElementException` if it does not contain a value.
 
 **Example**
 ```java
@@ -37,7 +37,7 @@ channel.sendMessage("Hi");
 ```
 
 ## isPresent()
-This method checks, if the Optional contains a value.
+This method checks if the Optional contains a value.
 
 **Example**
 ```java
@@ -49,7 +49,7 @@ if (channel.isPresent()) {
 ```
 
 ## orElse(...)
-This method returns the value of the Optional, or the given "default" value if the Optional does not contain a value.
+This method returns the value of the Optional or the given "default" value if the Optional does not contain a value.
 
 **Example**
 ```java

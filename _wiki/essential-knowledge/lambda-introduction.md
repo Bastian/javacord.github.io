@@ -6,7 +6,7 @@ keywords:
 ---
 
 As Javacord heavily benefits from [lambda expressions](https://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html), this introduction gives you a quick overview, if you are not familiar with lambdas. Lambdas are used as a short form of [functional interface](https://docs.oracle.com/javase/8/docs/api/java/lang/FunctionalInterface.html) implementations.
-Functional interfaces, are basically just interfaces with a single method definition. All listeners in Javacord are for example functional interfaces and look like this internally (simplified):
+Functional interfaces, are basically just interfaces with a single method definition. All listeners in Javacord, for example, are functional interfaces and look like this internally (simplified):
 ```java
 /**
  * This listener listens to message creations.
@@ -24,7 +24,7 @@ public interface MessageCreateListener {
 }
 ```
 
-Before Java 8 you would have implemented these kind of listener as an [anonymous class](https://docs.oracle.com/javase/tutorial/java/javaOO/anonymousclasses.html) which would look like this:
+Before Java 8, you would have implemented this kind of listener as an [anonymous class](https://docs.oracle.com/javase/tutorial/java/javaOO/anonymousclasses.html), which would look like this:
 ```java
 api.addMessageCreateListener(new MessageCreateListener() {
     @Override
@@ -34,7 +34,7 @@ api.addMessageCreateListener(new MessageCreateListener() {
     }
 });
 ```
-In Java 8 this can be replaced with a lambda expressions which does exactly the same thing, but shortens your code. The method parameter (in this case `event`) is written in front of the `->` arrow, and the method body is written after it.
+In Java 8, this can be replaced with a lambda expression, which does exactly the same thing, but shortens your code. The method parameter (in this case `event`) is written in front of the `->` arrow, and the method body is written after it.
 ```java
 api.addMessageCreateListener(event -> {
     // Do stuff
@@ -43,7 +43,7 @@ api.addMessageCreateListener(event -> {
 ```
 > Hint: If the method has more than one parameter, it would look like this: `(param1, param2) -> { ... }`
 
-There's even a shorter version: If you are only executing one statement you can get rid of the `{ }` brackets as well:
+There's even a shorter version: if you are only executing one statement, you can get rid of the `{ }` brackets as well:
 ```java
 api.addMessageCreateListener(event -> event.deleteMessage());
 ```

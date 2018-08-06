@@ -44,7 +44,7 @@ new WebhookBuilder(channel)
 
 You can get the `InviteBuilder` for a specific server channel:
 ```java
-ServerTextChannel channel = null;
+ServerTextChannel channel = ...;
 new InviteBuilder(channel)
     .setMaxAgeInSeconds(60*60*24)
     .setMaxUses(42)
@@ -55,7 +55,8 @@ new InviteBuilder(channel)
 
 You can get the `ServerBuilder` from the current api instance:
 ```java
-new ServerBuilder()
+DiscordApi api = ...;
+new ServerBuilder(api)
     .setName("My Awesome Server")
     .setIcon(api.getYourself().getAvatar())
     .setVerificationLevel(VerificationLevel.HIGH)

@@ -11,11 +11,11 @@ Javacord keeps an internal cache for entities (e.g. Servers, Channels, Users, ..
 
 ## What is in the cache?
 
-Nearly every entity which is known by the bot is guaranteed to be in the cache. There are a few exceptions though:
+Nearly every entity known by the bot is guaranteed to be in the cache. There are a few exceptions though:
 #### Messages
 Not every single message is in the cache, which means you can encounter messages which exist but are not in the cache. This can happen for most message events, e.g. the [`ReactionAddEvent`](https://ci.javacord.org/javadoc/org/javacord/api/event/message/reaction/ReactionAddEvent.html). You can, however, interact with these messages without having them in the cache. Every message event has methods like `event.deleteMessage()`, `event.editMessage("New Content")`. If you need the message (e.g. to get its content), you can request it using `event.requestMessage()`.
 
-Additionally you can use the static methods in the [`Message`](https://ci.javacord.org/javadoc/org/javacord/api/entity/message/Message.html) class which only require the channel and message id, e.g. `Message.edit(api, channelId, messageId, "New content");`. This is very useful, if you want to store them in a database.
+Additionally you can use the static methods in the [`Message`](https://ci.javacord.org/javadoc/org/javacord/api/entity/message/Message.html) class which only require the channel and message id, e.g. `Message.edit(api, channelId, messageId, "New content");`. This is very useful if you want to store them in a database.
 
 #### Webhooks and Invites
 
@@ -78,6 +78,6 @@ api.addReactionAddListener(event -> {
 });
 ```
 
-Some examples when cached entities get invalid:
+Some examples of when cached entities are invalidated:
 * The bot lost its connection to Discord and had to reconnect (not resume)
-* You weren't able to receive updates for an entity, e.g. for `Channel` because you left and rejoined a server
+* You weren't able to receive updates for an entity, e.g. for `Channel`, because you left and rejoined a server
