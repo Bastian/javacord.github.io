@@ -1,6 +1,6 @@
 ---
 title: Glossary
-position: 4
+position: 5
 keywords:
 - Guild
 - Selfbot

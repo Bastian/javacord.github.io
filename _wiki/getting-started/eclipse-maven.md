@@ -1,6 +1,6 @@
 ---
 title: Setup Eclipse + Maven
-position: 3
+position: 4
 ---
 ## Setup
 

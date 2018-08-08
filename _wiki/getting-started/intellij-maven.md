@@ -1,6 +1,6 @@
 ---
 title: Setup IntelliJ + Maven
-position: 2
+position: 3
 ---
 ## Setup
 
