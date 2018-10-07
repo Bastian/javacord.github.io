@@ -35,16 +35,3 @@ The content of the article.
 * `headline`: The headline of the article, displayed as `<h1>`. If not set, the title is used.
 * `position`: The position of the article in its category. Starting with `1`.
 * `keywords`: A list with keywords used for search. Don't repeat the title or headline here.
-
-# How to create changelogs
-Changelogs are located in the `_changelog` folder. They have the following structure:
-```
----
-title: "Version x.y.z"
-version: x.y.z
----
-
-The content of the changelog.
-```
-* `title`: The title of the changelog, which will be used for the `<title>` html tag, usually `Version :version:`
-* `version`: The version number
