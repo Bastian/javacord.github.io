@@ -11,7 +11,7 @@ keywords:
 It's important to know the life-cycle of a discord bot to properly handle disconnects. 
 The following state diagram shows the 4 states a bot can have:
 
-![](/img/tutorials/bot-life-cycle/state-diagram.svg)
+![](/img/tutorials/bot-life-cycle/state-diagram.svg){:draggable="false"}
 
 ## The four states
 

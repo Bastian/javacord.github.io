@@ -29,4 +29,4 @@ new MessageBuilder()
     .send(channel);
 ```
 would be displayed like this:
-> ![](https://i.imgur.com/AP1cjDf.png)
+> ![](https://i.imgur.com/AP1cjDf.png){:draggable="false"}

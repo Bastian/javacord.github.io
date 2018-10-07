@@ -36,7 +36,7 @@ You can get it by pressing `Ctrl` + `Shift` + `i` and navigating to `Network`.
 Filter the request type to only display `XHR` requests and search for a request that contains an `authorization` request header.
 If you don't see any requests, just press `Ctrl` + `r`. In this example, the token would be `mfa.h[...]c5eu`.
 
-![](/img/tutorials/selfbots/get-client-token.png)
+![](/img/tutorials/selfbots/get-client-token.png){:draggable="false"}
 
 ### Using the token
 

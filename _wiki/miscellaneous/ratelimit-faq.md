@@ -47,7 +47,7 @@ channel.sendMessage("Ratelimit Example #11");
 channel.sendMessage("Ratelimit Example #12");
 ```
 would look like this in the client:
->![](https://i.imgur.com/ailPCdH.gif)
+>![](https://i.imgur.com/ailPCdH.gif){:draggable="false"}
 
 You can clearly see the delay between every 5 sent messages.
 

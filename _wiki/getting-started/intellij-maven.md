@@ -7,27 +7,27 @@ position: 3
 **1.** Start IntelliJ
 
 **2.** Create a new project (`File` -> `New` -> `Project`)
->![](https://i.imgur.com/Twz9SlW.png)
+>![](https://i.imgur.com/Twz9SlW.png){:draggable="false"}
 
 **3.** Select `Maven`
 
 **4.** Make sure to select a SDK which is 1.8 (or greater)
 
 **5.** Click `Next`
->![](https://i.imgur.com/OGDuITx.png)
+>![](https://i.imgur.com/OGDuITx.png){:draggable="false"}
 
 **6.** Enter a group id (e.g. `com.github.yourname`)
 
 **7.** Enter an artifact id (e.g. `myfirstbot`)
 
 **8.** Click `Next`
->![](https://i.imgur.com/kWoutrk.png)
+>![](https://i.imgur.com/kWoutrk.png){:draggable="false"}
 
 **9.** Click on `Finish`
->![](https://i.imgur.com/pXwWMbi.png)
+>![](https://i.imgur.com/pXwWMbi.png){:draggable="false"}
 
 **10.** Your project should now look like this. First click on `Enable Auto-Import`
->![](https://i.imgur.com/PXZ6aww.png)
+>![](https://i.imgur.com/PXZ6aww.png){:draggable="false"}
 
 **11.** Now you have to add Javacord as a dependency by editing the pom.xml file. Your file should now look like this:
 ```xml
@@ -54,12 +54,12 @@ position: 3
 ```
 
 **12.** Create a new package
->![](https://i.imgur.com/EtgpIok.png)
->![](https://i.imgur.com/P4e3RwT.png)
+>![](https://i.imgur.com/EtgpIok.png){:draggable="false"}
+>![](https://i.imgur.com/P4e3RwT.png){:draggable="false"}
 
 **13.** Create a new class inside this package
->![](https://i.imgur.com/VVnLssf.png)
->![](https://i.imgur.com/nyl3Jit.png)
+>![](https://i.imgur.com/VVnLssf.png){:draggable="false"}
+>![](https://i.imgur.com/nyl3Jit.png){:draggable="false"}
 
 **14.** You can now start coding! Example code:
 ```java
@@ -80,13 +80,13 @@ public class Main {
 ## Run the code
 
 You can run your code by clicking on the small green arrow
->![](https://i.imgur.com/USGlewm.png)
+>![](https://i.imgur.com/USGlewm.png){:draggable="false"}
 
 ## Possible problems
 
 **Note:** If you get the following error:
->![](https://i.imgur.com/Q34zZpb.png)
+>![](https://i.imgur.com/Q34zZpb.png){:draggable="false"}
 
 you have to change your language level to `1.8`
 
->![](https://i.imgur.com/IwQ5LN8.png)
+>![](https://i.imgur.com/IwQ5LN8.png){:draggable="false"}

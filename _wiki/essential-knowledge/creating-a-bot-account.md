@@ -12,24 +12,24 @@ keywords:
 
 **1.** Open [https://discordapp.com/developers/applications/me](https://discordapp.com/developers/applications/me) and click on "Create an application".
 
->![](/img/tutorials/create-bot-account/create-application.png)
+>![](/img/tutorials/create-bot-account/create-application.png){:draggable="false"}
 
 **2.** Switch to `Bot`
 
 > If you want to, you can rename your application first
 
->![](/img/tutorials/create-bot-account/click-bot.png)
+>![](/img/tutorials/create-bot-account/click-bot.png){:draggable="false"}
 
 **3.** Click on `Add bot` and confirm the popup
 
->![](/img/tutorials/create-bot-account/add-bot.png)
->![](/img/tutorials/create-bot-account/confirm.png)
+>![](/img/tutorials/create-bot-account/add-bot.png){:draggable="false"}
+>![](/img/tutorials/create-bot-account/confirm.png){:draggable="false"}
 
 **4.** Copy the bot's token. In this case the token would be `NDc[...]pCs`. You can just click on `Copy`.
 
 > This token is used to login your bot. Keep it secret!
 
->![](/img/tutorials/create-bot-account/copy-token.png)
+>![](/img/tutorials/create-bot-account/copy-token.png){:draggable="false"}
 
 **5.** If you want to, you can change the bot's name and avatar on this page, too.
 
@@ -53,7 +53,7 @@ In order to add a bot to your server you need its client id.
 
 You can get your client id from the [same page](https://discordapp.com/developers/applications/me) where you created it.
 
->![](/img/tutorials/create-bot-account/get-client-id.png)
+>![](/img/tutorials/create-bot-account/get-client-id.png){:draggable="false"}
 
 With this id you can create an invite link for your bot.
 
@@ -69,9 +69,9 @@ Just use the following link and replace `123456789` with your own client id.
 
 You can calculate the permissions (in the link above it's the `0`) on the page where you created the bot:
 
->![](/img/tutorials/create-bot-account/calculate-permissions.png)
+>![](/img/tutorials/create-bot-account/calculate-permissions.png){:draggable="false"}
 
 ## Use the invite link
 
 You can now open the link and add the bot to your server:
->![](https://i.imgur.com/C8mzkNP.png)
+>![](https://i.imgur.com/C8mzkNP.png){:draggable="false"}

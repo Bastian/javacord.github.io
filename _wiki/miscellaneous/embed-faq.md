@@ -17,7 +17,7 @@ keywords:
 
 ## What is an embed?
 This is an embed:
-> ![Embed](https://i.imgur.com/QYbXmQU.png)
+> ![Embed](https://i.imgur.com/QYbXmQU.png){:draggable="false"}
 
 ## How can I create an embed in Javacord?
 Javacord provides an `EmbedBuilder` which can be used to create embeds:
@@ -48,7 +48,7 @@ Javacord allows you to use several image sources. By default embeds expect a lin
 * First parameter: The name of the author
 * Second parameter: A link for the author (e.g. their homepage). Can be `null`.
 * Third parameter: The avatar of the author
-> ![](https://i.imgur.com/SyE0e88.png)
+> ![](https://i.imgur.com/SyE0e88.png){:draggable="false"}
 
 ## What's the difference between an inline field and a normal one?
 Normal fields always start in a new line, whereas several inline fields can be in the same line.

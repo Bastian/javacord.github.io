@@ -3,7 +3,7 @@ title: Welcome
 position: 1
 redirect_from: "/wiki/"
 ---
-![](/img/javacord3_banner.png)
+![](/img/javacord3_banner.png){:draggable="false"}
 
 ## Introduction
 

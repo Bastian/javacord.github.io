@@ -31,7 +31,7 @@ or use the normal "tag":
 ```java
 channel.sendMessage("Hi! :smiley:");
 ```
->![](https://i.imgur.com/VBiTPq5.png)
+>![](https://i.imgur.com/VBiTPq5.png){:draggable="false"}
 
 ### How to use them for reactions
 
@@ -40,14 +40,14 @@ Adding unicode reactions is only possible by using the "real" reaction. It doesn
 message.addReaction("😃"); // works
 message.addReaction(":smiley:"); // doesn't work
 ```
->![](https://i.imgur.com/Wpp8PNz.png)
+>![](https://i.imgur.com/Wpp8PNz.png){:draggable="false"}
 
 ## Custom Emojis
 
 ### What are custom emojis?
 
 Custom emojis are emojis that are created in a server. You can get all custom emojis the bot knows by using `DiscordApi#getCustomEmojis()`.
-![](https://i.imgur.com/5tb3Kxu.png)
+![](https://i.imgur.com/5tb3Kxu.png){:draggable="false"}
 
 ### How to use them in messages
 
@@ -75,15 +75,15 @@ message.addReaction("javacord:415465982715494402");
 ### How to get the tag
 
 Just add a `\` in front of the emoji and press `Enter`
-> ![](https://i.imgur.com/9L1WyFm.gif)
+> ![](https://i.imgur.com/9L1WyFm.gif){:draggable="false"}
 
-> ![](https://i.imgur.com/4WTGo7F.png)
+> ![](https://i.imgur.com/4WTGo7F.png){:draggable="false"}
 
 ## Javacord Emoji "Hierarchy"
 
 In Javacord, all Emojis are a child of the `Emoji` interface:
 
-![](https://i.imgur.com/YtMKqXe.png)
+![](https://i.imgur.com/YtMKqXe.png){:draggable="false"}
 
 ### What is a KnownCustomEmoji?
 

@@ -7,19 +7,19 @@ position: 4
 **1.** Start Eclipse
 
 **2.** Create a new project (`File` -> `New` -> `Project`)
->![](https://i.imgur.com/hYeYxen.png)
+>![](https://i.imgur.com/hYeYxen.png){:draggable="false"}
 
 **3.** Select `Maven Project`
 
 **4.** Click `Next`
 
->![](https://i.imgur.com/CeHy9HK.png)
+>![](https://i.imgur.com/CeHy9HK.png){:draggable="false"}
 
 **5.** Check `Create a simple project`
 
 **6.** Click `Next`
 
->![](https://i.imgur.com/xxbGmr6.png)
+>![](https://i.imgur.com/xxbGmr6.png){:draggable="false"}
 
 **7.** Enter a group id (e.g. `com.github.yourname`)
 
@@ -27,15 +27,15 @@ position: 4
 
 **9.** Click `Finish`
 
->![](https://i.imgur.com/JSV9yrl.png)
+>![](https://i.imgur.com/JSV9yrl.png){:draggable="false"}
 
 **10.** Double click on the `pom.xml` file
 
->![](https://i.imgur.com/NCAALIt.png)
+>![](https://i.imgur.com/NCAALIt.png){:draggable="false"}
 
 **11.** Select `pom.xml`
 
->![](https://i.imgur.com/kbdtiLJ.png)
+>![](https://i.imgur.com/kbdtiLJ.png){:draggable="false"}
 
 **12.** Now you have to add Javacord as a dependency by editing the pom.xml file. Your file should now look like this:
 
@@ -64,17 +64,17 @@ position: 4
 
 **13.** Create a new package inside the `src/main/java` folder
 
->![](https://i.imgur.com/Z1QNuQf.png)
->![](https://i.imgur.com/RKJc0yU.png)
+>![](https://i.imgur.com/Z1QNuQf.png){:draggable="false"}
+>![](https://i.imgur.com/RKJc0yU.png){:draggable="false"}
 
 **14.** Create a new class inside this package
 
->![](https://i.imgur.com/eUmumlz.png)
->![](https://i.imgur.com/GsPFaag.png)
+>![](https://i.imgur.com/eUmumlz.png){:draggable="false"}
+>![](https://i.imgur.com/GsPFaag.png){:draggable="false"}
 
 **15.**  Save the project (you should do this from time to time)
 
->[](https://i.imgur.com/Ht5UT8S.png)
+>[](https://i.imgur.com/Ht5UT8S.png){:draggable="false"}
 
 **16.** Now you can start coding! Example code:
 ```java
@@ -96,4 +96,4 @@ public class Main {
 ## Run the code
 
 You can run your code by clicking on the small green arrow
->![](https://i.imgur.com/rsIHH9M.png)
+>![](https://i.imgur.com/rsIHH9M.png){:draggable="false"}

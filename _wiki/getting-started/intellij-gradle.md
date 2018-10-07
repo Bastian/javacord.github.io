@@ -7,14 +7,14 @@ position: 2
 **1.** Start IntelliJ
 
 **2.** Create a new project (`File` -> `New` -> `Project`)
->![](/img/tutorials/setup-intellij-gradle/create-project.png)
+>![](/img/tutorials/setup-intellij-gradle/create-project.png){:draggable="false"}
 
 **3.** Select `Gradle`
 
 **4.** Make sure to select a SDK which is 1.8 (or greater)
 
 **5.** Click `Next`
->![](/img/tutorials/setup-intellij-gradle/select-gradle.png)
+>![](/img/tutorials/setup-intellij-gradle/select-gradle.png){:draggable="false"}
 
 **6.** Enter a group id (e.g. `com.github.yourname`)
 
@@ -25,18 +25,18 @@ position: 2
 > You can choose whatever you want
 
 **8.** Click `Next`
->![](/img/tutorials/setup-intellij-gradle/new-project.png)
+>![](/img/tutorials/setup-intellij-gradle/new-project.png){:draggable="false"}
 
 **9.** Check `Use auto-import`
 
 **10.** Click `Next`
->![](/img/tutorials/setup-intellij-gradle/new-project-2.png)
+>![](/img/tutorials/setup-intellij-gradle/new-project-2.png){:draggable="false"}
 
 **11.** Click `Finish`
->![](/img/tutorials/setup-intellij-gradle/new-project-3.png)
+>![](/img/tutorials/setup-intellij-gradle/new-project-3.png){:draggable="false"}
 
 **12.** Locate the `build.gradle` file and open it
->![](/img/tutorials/setup-intellij-gradle/after-finished.png)
+>![](/img/tutorials/setup-intellij-gradle/after-finished.png){:draggable="false"}
 
 **12.** Add the Javacord dependency. Your `build.gradle` file should now look like this
 ```groovy
@@ -59,12 +59,12 @@ dependencies {
 ```
 
 **13.** Create a new package in the `src/main/java` folder
->![](/img/tutorials/setup-intellij-gradle/new-package.png)
->![](/img/tutorials/setup-intellij-gradle/new-package-2.png)
+>![](/img/tutorials/setup-intellij-gradle/new-package.png){:draggable="false"}
+>![](/img/tutorials/setup-intellij-gradle/new-package-2.png){:draggable="false"}
 
 **14.** Create a new class inside this package
->![](/img/tutorials/setup-intellij-gradle/new-class.png)
->![](/img/tutorials/setup-intellij-gradle/new-class-2.png)
+>![](/img/tutorials/setup-intellij-gradle/new-class.png){:draggable="false"}
+>![](/img/tutorials/setup-intellij-gradle/new-class-2.png){:draggable="false"}
 
 **14.** You can now start coding! Example code:
 ```java
@@ -97,4 +97,4 @@ public class Main {
 ## Run the code
 
 You can run your code by clicking on the small green arrow
->![](/img/tutorials/setup-intellij-gradle/run-the-bot.png)
+>![](/img/tutorials/setup-intellij-gradle/run-the-bot.png){:draggable="false"}
