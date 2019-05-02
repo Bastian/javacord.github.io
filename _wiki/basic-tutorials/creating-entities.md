@@ -22,7 +22,7 @@ Javacord provides `XyzBuilder` classes to create new Discord entities like chann
 You can get the channel builders for a specific server using the `createXyzChannelBuilder` or directly calling the constructor, e.g. creating a `ServerVoiceChannel` would look like this:
 ```java
 Server server = ...;
-new VoiceChannelBuilder(server)
+new ServerVoiceChannelBuilder(server)
     .setName("example-channel")
     .setUserlimit(10)
     .create();
