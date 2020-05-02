@@ -58,6 +58,7 @@ Normal fields always start in a new line, whereas several inline fields can be i
 | Type         | Limit           |
 | ------------ | --------------- |
 | Title        | 256 characters  |
+| Description  | 2048 characters |
 | Field Amount | Up to 25 fields |
 | Field Name   | 256 characters  |
 | Field Value  | 1024 characters |
