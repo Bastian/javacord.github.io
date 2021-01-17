@@ -1,4 +1,9 @@
+# ⚠️ WARNING ⚠️
+
+This repository has been replaced by https://github.com/Javacord/Website
+
 # Javacord Website
+
 This is Javacord's github.io page, which hosts our website.
 
 ## I just want to use Javacord :\(
